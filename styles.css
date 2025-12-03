@@ -1,0 +1,17 @@
+:root{
+    --color-bg-primary: #4c5b61;
+    --color-bg-secondary: #949b96;
+    --color-heading: #2C423F;
+    --color-color-text: #829191;
+}
+html{
+    scroll-padding-top: 80px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-bg-primary);
+    color: var(--color-color-text);
+}
