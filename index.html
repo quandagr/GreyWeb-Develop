@@ -94,15 +94,15 @@
             <h2 class="text-center">Contact Us</h2>
             <p class="text-center">Have questions or want to work with us? Reach out!</p>
             <div class="d-flex justify-content-center gap-4">
-                <div>
-                    <h4>Email</h4>
-                    <p>qg@greyweb@net.com
+                <div class="col-md-4">
+                    <h2 class="text-center">Email</h2>
+                    <p class="text-center">qg@greyweb@net.com
                     </p>
                 </div> 
                 </div>
         </div>
     </div>
-    <div class="container">
+    <form class="container">
         <div class="mb-3">
   <label for="ContactEmail" class="form-label">Email address</label>
   <input type="email" class="form-control" id="ContactEmail" placeholder="name@example.com">
@@ -111,10 +111,12 @@
   <label for="EnterText" class="form-label">Enter Text</label>
   <textarea class="form-control" id="EnterText" rows="3"></textarea>
 </div>
-    </div>
+<button onclick="CreateLeads()"class="btn btn-primary">Submit</button>
+    </form>
     <!--Footer-->
     <footer class="text-center p-3 mt-4 border-top">
         <p>&copy; 2024 GreyWeb-Develop. All rights reserved.</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
