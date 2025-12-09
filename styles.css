@@ -5,7 +5,7 @@
     --color-color-text: #829191;
 }
 html{
-    scroll-padding-top: 80px;
+    scroll-padding: 80px;
 }
 
 body{
