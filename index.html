@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body onload="getProducts()">
     <!--Header/Nav-->
      <header class="d-flex justify-content between align-items-center" ></header>
         <div class="d-flex gap-2 align-items-center">
@@ -77,28 +77,10 @@
             <h2 class="text-center">Pricing Plans</h2>           
     <!--Contact Info-->
     <h2 class="text-center">Our Pricing</h2>
-            <div class=" row justify-content-center gap-4 mt-">
-                <div class=" column"></div>
-                <div class= "card col-md-3 border p-3">
-                    <img src="assest/customapp.jpg" alt="Custom Application Development" width="100%" height="150px"/>  
-                    <h3>Custom application development</h3>
-                    <p>$2500 - Simple website with up to 5 pages.</p>
-                </div>
-                </div>
-        
-                <div class=" column"></div>
-                <div class="card col-md-3 border p-3">
-                    <img src="assest/mobileap.jpg" alt="Mobile App Development" width="100%" height="150px"/>
-                    <h3>Mobile App development</h3>
-                    <p>$4500 - E-commerce site with payment integration. We create cross-platform mobile apps ensuring streamline business user experience on IOS and Andriod systems </p>
-                </div>
-                <div class="justify-content-center gap-4 mt-4"></div>
-                <div class=" card col-md-3 border p-3">
-                    <img src="assest/AIdevelop.jpg" alt="AI Software Development" width="100%" height="150px"/>
-                    <h3>AI Software development</h3>
-                    <p>$6000 - Custom web application with advanced features.Leverage the power of artificial intelligence to streamline operations, enhance decision-making, and drive business growth. </p>
-                </div>
+            <div class=" row " id="Products">
+               
             </div>
+                </div>
         <div id="contact" class="mt-5">
             <h2 class="text-center">Contact Us</h2>
             <p class="text-center">Have questions or want to work with us? Reach out!</p>

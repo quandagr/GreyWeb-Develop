@@ -8,6 +8,7 @@ async function CreateLeads() {
     let email = document.getElementById("ContactEmail").value;
     let text = document.getElementById("EnterText").value;
     let name = document.getElementById("FullName").value;
+    
 
     let leads = {
         "Contact_Email": email,
@@ -24,4 +25,31 @@ async function CreateLeads() {
         body: JSON.stringify(leads)
     });
     console.log(response);
+   
 }
+
+let products = document.getElementById("Products");
+const supabaseUrl = "https://skogfghrpsiaibzbjgne.supabase.co/rest/v1/Products";
+async function getProducts() {
+   let response = await fetch(supabaseUrl,{
+    method: "GET",
+    headers: {
+            "Content-Type": "application/json",
+            "apikey": apiKey,
+        },
+    })
+    let data = await response.json();
+    console.log(data);
+    for(let i = 0; i < data.length; i++){
+        products.innerHTML += `
+       <div class= "col-md-6 col-lg-4 border p-3">
+                    <div class="card" style="width: 18rem;">
+                    <img src="${data [i].img_url}"
+                    class="card-img-top" alt="${data[i].Name}" width="100%" height="150px"/>  
+                    <div class="card-body">
+                    <h3 class="card-title">${data[i].Name}</h3>
+                    <p class="card-text">$${data[i].Price} - ${data[i].Description}</p>
+
+                </div>
+        </div>`}
+    }
